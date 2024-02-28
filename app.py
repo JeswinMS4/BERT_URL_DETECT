@@ -36,7 +36,10 @@ def main():
             for prediction in predictions:
                 label = prediction["label"]
                 score = prediction["score"]
-                st.success(f"Label: {label}, Score: {score}")
+                if (label =='BENIGN'):
+                    st.success(f"Label: {label}, Score: {score}")
+                else:
+                    st.error(f"Label: {label}, Score: {score}")                
         else:
             st.warning("Please enter a valid URL")
 
