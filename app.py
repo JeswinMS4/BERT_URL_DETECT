@@ -1,7 +1,7 @@
 import streamlit as st
 import transformers
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
-
+import torch
 
 
 class url_pattern_recognition:
